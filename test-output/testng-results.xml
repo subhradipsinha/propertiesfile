@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="47898" started-at="2019-03-17T11:38:44Z" finished-at="2019-03-17T11:39:32Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="38283" started-at="2019-03-17T11:38:44Z" finished-at="2019-03-17T11:39:22Z">
+      <class name="goaptiedemo.com.goaptive">
+        <test-method status="FAIL" signature="browserTest(java.lang.String)[pri:0, instance:goaptiedemo.com.goaptive@5faeada1]" name="browserTest" duration-ms="38241" started-at="2019-03-17T11:38:44Z" finished-at="2019-03-17T11:39:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [successful Login] but found [User email Id Wrong.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [successful Login] but found [User email Id Wrong.]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at goaptiedemo.com.goaptive.browserTest(goaptive.java:69)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserTest -->
+      </class> <!-- goaptiedemo.com.goaptive -->
+    </test> <!-- Test -->
+    <test name="Test1" duration-ms="9571" started-at="2019-03-17T11:39:23Z" finished-at="2019-03-17T11:39:32Z">
+      <class name="goaptiedemo.com.goaptive">
+        <test-method status="FAIL" signature="browserTest(java.lang.String)[pri:0, instance:goaptiedemo.com.goaptive@37d31475]" name="browserTest" duration-ms="9564" started-at="2019-03-17T11:39:23Z" finished-at="2019-03-17T11:39:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EmailAttachment]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.apache.commons.mail.EmailException">
+            <message>
+              <![CDATA[Sending the email to the following server failed : smtp.gmail.com:465]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.gmail.com:465
+at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1469)
+at org.apache.commons.mail.Email.send(Email.java:1496)
+at goaptiedemo.com.goaptive.browserTest(goaptive.java:200)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials z6sm31711523pgo.31 - gsmtp
+
+at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:914)
+at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:825)
+at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:730)
+at javax.mail.Service.connect(Service.java:388)
+at javax.mail.Service.connect(Service.java:246)
+at javax.mail.Service.connect(Service.java:195)
+at javax.mail.Transport.send0(Transport.java:254)
+at javax.mail.Transport.send(Transport.java:124)
+at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1459)
+... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.apache.commons.mail.EmailException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserTest -->
+      </class> <!-- goaptiedemo.com.goaptive -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
+</testng-results>
